@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula9</title>
+    <style>
+.caixa1 {
+  position: absolute;
+  z-index: 2;
+}
+.caixa2 {
+  position: absolute;
+  z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="caixa">
+        <p>ola
+
+        </p>
+        <div class="caixa2">
+        <p>Tchau!!</p>
+    </div>
+    </div>
+
+    
+</body>
+</html>
+<!--z-index: Quem fica na frente
+Serve para dizer quem “fica por cima” quando elementos se sobrepõem.
+Quanto maior o z-index, mais na frente o elemento aparece.-->
+
+<!--
+sticky
+Fica preso até chegar a um ponto, depois gruda no topo da tela enquanto você rola.
+
+static (padrão)
+Todos os elementos vêm com esse por padrão. Eles aparecem um embaixo do outro, seguindo a ordem do HTML.
+
+relative
+Permite ajustar o elemento em relação à sua posição original.
+
+absolute
+Posiciona o elemento em relação ao primeiro ancestral com position: relative (ou ao <body> se não houver)
+    
+    fixed
+Fica fixo na tela, mesmo quando você rola a página (ótimo pra menus ou botões flutuantes).
+em html o position (poisição), nos permite mover os elementos a nossa maneira, o parametro static dentro de position
+    é o padroa e coloca um elemento abaixo do outro já o parametro relative(relativo) nos permite move-los a nossa vontade-->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Medio</title>
+    <style>
+
+        @keyframes pisca{
+             0% { opacity: 1; }
+             50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .text{
+            animation-name: pisca;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">Eu sou o texto principal!!</h1>
+</body>
+</html>
+
+<!--2️⃣ Médio: Crie um texto que pisca com opacity usando animação-->

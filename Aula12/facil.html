@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes facil</title>
+    <style>
+
+        @keyframes andar{
+            0% { transform: translateX(0); }
+             100% { transform: translateX(300px);
+            background-color: green; }
+        }
+
+        .quadrado{
+            width: 150px;
+            height: 150px;
+            animation-name: andar;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            background-color:blue;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="quadrado">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo nihil iure nam saepe voluptas quae, corporis similique quasi, autem nobis non aspernatur ex quo debitis, adipisci eligendi exercitationem facere?</p>
+    </div>
+</body>
+</html>
+
+<!--1️⃣ Fácil: Crie um quadrado que muda de cor do azul para o verde e volta com @keyframes-->

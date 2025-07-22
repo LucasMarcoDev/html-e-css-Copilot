@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+    <style>
+
+           section > div >.bt:hover{
+            background-color: orange;
+        }
+
+        #container{
+            display: flex;
+            justify-content:space-around ;
+            border: 2px solid rgb(50, 217, 214);
+            background-color: green;
+            box-shadow: 5px 5px 5px black;
+            padding: 15px;
+            margin: 20px;
+        }
+     
+        .bt{
+            display: flex;
+            
+        }
+        @media(max-width:450px){
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        #titu:hover{
+            background-color: aqua;
+        }
+        .t1:hover{
+            color: red;
+            background-color: gray;
+        }
+
+        .nave{
+            display: flex;
+            justify-content: space-between;
+        }
+
+          @media(max-width:450px){
+            .nave{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        @media(max-width:450px){
+            p{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header id="titu">
+        <h1 class="t1">Projeto Desafio 2 Copilot</h1>
+    </header>
+
+    <div class="nave">
+        <nav class="nave">
+            <ul>
+                <li><a href="https://github.com/LucasMarcoDev" target="_blank">Clique para visitar minha pagina no GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-virgilino-855312125/" target="_blank">CLique para visitar a minha pagina do Linekdln</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="container">
+            <div>
+                <h1>Primeiro titulo da main</h1>
+                <p>Sempre usaremos tags semanticas em nosso site</p>
+                <button class="bt">Clique</button>
+            </div>
+             <div>
+                <h1>Teste de Flex-Box</h1>
+                <p>Estamos em busca de Novos Devs front-end</p>
+                <button class="bt">Clique</button>
+            </div>
+            </div>
+             <div>
+                <h1>Exercicio do futuro dev Front-End</h1>
+                <p>Aqui estao sendo dados meus primeiros passos no mundo da programaçao Front-End</p>
+                <button class="bt">Clique</button>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Obrigado por visitar meu site treino usando meus conhecimentos adquiridos ate o momento</p>
+    </footer>
+</body>
+</html>
+
+
+
+

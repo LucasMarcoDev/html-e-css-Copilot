@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames</title>
+    <style>
+        @keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.titulo-animado {
+  animation-name: piscar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+.cabeca{
+    background-color: aqua;
+}
+
+@keyframes deslizar {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); 
+    background-color: brown;}
+}
+
+.caixinha {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  animation: deslizar 2s ease-in-out infinite;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <header class="cabeca">
+            <h1 class="titulo-animado">Estou aqui dentro </h1>
+        </header>
+    </div>
+
+    <div>
+        <h1 class="caixinha">I'm strongest!!</h1>
+    </div>
+</body>
+</html>
+
+<!-- No dia de hoje aprenderei sobre @keyframes em css que fazem com que o site ganhe animações
+ 
+Propriedades importantes:
+Propriedade	O que faz
+animation-name	Nome da sua coreografia (@keyframes)
+animation-duration	Tempo da animação (ex: 2s)
+animation-iteration-count	Quantas vezes repetir (infinite para sempre)
+animation-delay	Tempo de espera antes de começar
+animation-timing-function	Velocidade da transição (ease, linear, etc.)
+-->
