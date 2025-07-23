@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+
+        @keyframes imagens{
+            0%{
+                background-image: url(testequeries/goku.jpg);
+                 width: 500px;
+                height: 500px;
+            }
+
+            25%{
+                background-image: url(testequeries/vegeta.jpeg);
+                 width: 1000px;
+                 height: 1000px;
+            }
+
+            50%{
+                background-image: url(testequeries/Gohan.jpg);
+                 width: 1000px;
+                height: 1000px;
+
+            }
+
+            75%{
+                background-image: url(testequeries/yajirobe.jpg);
+                 width: 1000px;
+                height: 1000px;
+            }
+
+            100%{
+                background-image: url(testequeries/piccolo.jpeg);
+                 width: 1000px;
+                height: 1000px;
+            }
+
+        }
+        .img{
+            width: 1000px;
+            height: 1000px;
+            box-shadow: 3px 3px 3px black;
+            animation-name: imagens;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="img"></div>
+        aqui aparecera as imagens de alguns guerreiros Z
+    </div>
+</body>
+</html>
