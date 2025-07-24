@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After difícil</title>
+
+    <style>
+        /*
+        div::before{
+            content: "border-radius:  10px 0px 0px 0px";
+        }
+
+        div::after{
+            content:"©️" ;
+            background-color: white;
+            align-content: end;
+        }
+            */
+
+
+
+        div {
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, orange, red);
+  border-radius: 10px 10px 0 0;
+}
+
+div::after {
+  content: "©️ Ggamer7";
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: gray;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div>Olá eu sou uma div</div>
+
+    <!--Difícil: Crie um div que tem uma borda decorativa em cima, simulada com ::before, e um selo final embaixo com ::after-->
+</body>
+</html>
