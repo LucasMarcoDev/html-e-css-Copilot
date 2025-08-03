@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Projeto</title>
+    <style>
+        #formu{
+            display: flex;
+            margin: 5px;
+            padding: 3px 3px;
+            border: 5px solid black;
+            flex-direction: column;
+            padding: 5px 5px ;
+        }
+
+        .ff{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lucas Marco de Paula Virgilino</h1>
+    <p>Olá meu nome é Lucas Marco e sou estudante do curso de análise e desenvolvimento de sistemas pela universidade
+        São Judas Tadeu, atualmente estou iniciando o segundo semestre e estudo programação para desenvolvimento web,
+        utilizando HTML5,CSS3 e JavaScript. 
+    </p>
+    <div>
+        <h2>Tecnologias que quero aprender </h2>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>Java</li>
+            </ol>
+    </div>
+
+    <div>
+        <h2>Lista de Hobbies pessoais</h2>
+        <ul>
+            <li>Praticar esportes</li>
+            <li>Jogar video-games</li>
+            <li>Assistir animes e séries</li>
+        </ul>
+    </div>
+
+    <section>
+        <div>
+            <dl>
+                <dt>HTML5</dt>
+                <dd>Hyper Text Markup Language</dd>
+                <dt>CSS3</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript linguagem de programaçã</dd>
+            </dl>
+        </div>
+    </section>
+    <img src="images.jpeg" alt="Hulk Hogan Lutador de luta livre" width="250px" height="250px">
+    <nav><a href="https://www.youtube.com/watch?v=VgDgWzBL7s4&list=RDVgDgWzBL7s4&start_radio=1" target="_blank">Clique e assista a luta de Rock Lee VS Gaara</a></nav>
+    <form action="" id="formu">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required minlength="3" class="ff">
+
+        <label for="">Email:</label>
+        <input required type="email" name="email" id="email" placeholder="Email" class="ff">
+
+        <label for="msg">Mensagem:</label>
+        <input type="text" name="msg" id="msg" placeholder="Mensagem" required minlength="5" class="ff">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
+    <!--Desafio Final — Criar uma Página de Apresentação Pessoal
+🎯 Objetivo:
+Um formulário com os campos:
+
+Nome
+
+Email
+
+Mensagem
+
+Botão “Enviar”
+
+Com pelo menos 3 validações HTML5 diferentes-->
