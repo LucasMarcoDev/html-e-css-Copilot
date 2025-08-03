@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Projeto Css3</title>
+    <style>
+        #secao{
+            background-image: linear-gradient(to right, rgb(247, 245, 243),rgb(10, 10, 10))
+        }
+
+
+        @keyframes titulo{
+            0%{background-color: orange; transform: translateX(20px);}
+            25%{background-color: rgba(238, 130, 238, 0.507); transform: translateX(10px);}
+            50%{background-color: rgba(154, 25, 25, 0.703); transform: translateY(0px);}
+           100%{background-color: rgba(154, 25, 25, 0.703); transform: translateY(100px);}
+            
+
+
+        }
+        .cabecalho{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: aqua;
+            animation-name: titulo;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+        }
+        #container{
+            display: flex;
+            height: 250px;
+            width: 250px;
+            box-shadow: 5px 5px black;
+            border: 10px 10px solid;
+            justify-content: center;
+             flex-direction: column;
+        }
+        
+        #container:hover{
+            height: 300px;
+        }
+        .li{
+            display: flex;
+             align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, rgb(48, 140, 165), rgb(255, 147, 39));
+           
+           
+        }
+
+        .bt{
+            background-image: linear-gradient(to left, red,green);
+            transition-property: background-image;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .bt:hover{
+            background-image:linear-gradient(45deg,rgb(52, 158, 170),rgb(175, 124, 29)) ;
+        }
+
+        .bt::before{
+            content: "⚡ ";
+  color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="head">
+        <h1 class="cabecalho">Olá bem - vindo ao site</h1>
+    </header>
+
+    <section id="secao">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni eaque animi sapiente asperiores, nam doloremque voluptas temporibus dolor earum possimus dolores necessitatibus ratione, iure distinctio accusantium explicabo deleniti et.</p>
+    </section>
+      <div id="container">
+        <h1 class="li">vivre card</h1>
+        <p class="li">HTML</p>
+        <button class="bt">Enviar</button>
+      </div>
+    
+
+    
+ <!--Um <div> como “card interativo”
+
+Um botão com transition
+
+Um ::after com um emoji ou símbolo
+✅ Transições suaves com transition
+
+✅ Gradientes com background-image
+
+✅ Pseudo-elementos ::before e ::after
+
+✅ Seletores avançados com classe e ID
+
+✅ E um toque de criatividade, que você tem de sobra!
+
+Fundo com gradiente moderno
+
+Botão com transição suave ao passar o mouse
+
+Pseudo-elementos decorativos em título ou parágrafo
+
+Um card animado que desliza ou cresce com :hover
+
+✅ Regras obrigatórias
+Item	Requisitos
+Fundo	Usar linear-gradient
+Animação (@keyframes)	Aplicar em título ou elemento
+Transição (transition)	Suavidade em botão ou card
+Pseudo-elementos	::before ou ::after com content
+Estrutura HTML	Usar <header>, <section>, <button>, <div>
+💡 Dica: Comece simples
+Um título no <header> piscando com opacity
+
+Um <section> com fundo gradiente
+
+
+
+</body>
+</html>
