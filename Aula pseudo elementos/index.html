@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After e Before</title>
+    <style>
+        .info:hover{
+            background-image: linear-gradient(to left, blue, rgb(72, 219, 32));
+            
+
+        }
+
+        .info::before{
+            content: '🎯' ;
+        }
+        .info::after{
+            content: '😄';
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat illum sint voluptas veniam nostrum perspiciatis consequatur modi suscipit placeat, rem quasi nisi atque, possimus dolorem distinctio. Laudantium, cumque debitis.</p>
+</body>
+</html>
+
+<!--Crie um novo parágrafo com classe info, aplique:
+
+Um estilo que aparece ao passar o mouse
+
+Um ícone antes e depois usando ::before e ::after
+
+Me mostra que você aprendeu e eu te levo pra Aula 3: Box Model e Layout com margem, padding, border... o segredo das caixinhas! 📦💥
+
+Pronto pra brincar com o poder do CSS dinâmico? 😄🎯✨-->
