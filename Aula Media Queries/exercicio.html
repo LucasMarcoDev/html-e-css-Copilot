@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Media Queries</title>
+
+    <style>
+        .caixa{
+            width: 460px;
+            background-color: purple;
+            padding: 20px;
+            color: white;
+        }
+
+        @media(max-width: 600px){
+            .caixa{
+                width: 100%;
+                background-color: yellowgreen;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="caixa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maiores nihil architecto facilis voluptates ipsam at, non culpa dolorem, doloribus, dolores placeat repellat? Accusantium optio atque laborum, minus quod quisquam.</p>
+
+</body>
+</html>
+
+<!--Desafio da Aula
+Crie uma página com:
+
+Uma caixa com largura fixa e cor de fundo
+
+Uma Media Query que:
+
+Mude a cor da caixa em telas menores que 600px
+
+Faça a caixa ocupar 100% da largura-->

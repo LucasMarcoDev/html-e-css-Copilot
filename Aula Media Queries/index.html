@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* Estilo padrão para telas grandes */
+body {
+  background-color: lightblue;
+}
+
+/* Estilo para telas menores que 600px */
+@media (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+.caixa {
+  width: 400px;
+  padding: 20px;
+  background-color: salmon;
+}
+
+/* Quando a tela for pequena */
+@media (max-width: 600px) {
+  .caixa {
+    width: 100%;
+    background-color: rgb(189, 2, 2);
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum labore praesentium, alias quaerat eaque accusamus, consequatur, autem architecto a mollitia neque est quis obcaecati. Dolorem porro hic vitae ad placeat?</p>
+
+
+    <p class="caixa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae dolor voluptatem quae neque magnam nostrum quia, eum totam libero, laborum, doloremque illo rem ipsam? Perspiciatis optio distinctio voluptate aut.</p>
+</body>
+</html>
