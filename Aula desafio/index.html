@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        body{
+            background-color: white;
+            color:black ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+
+        h1{
+            padding: 5px 5px 5px 5px;
+            margin: 10px 10px 10px 10px;
+            border: 3px solid black;
+
+        }
+        h2{
+            padding: 5px 5px 5px 5px;
+            margin: 10px 10px 10px 10px;
+            border: 3px dashed rgb(78, 78, 174);
+
+        }
+        p{
+            padding: 5px 5px 5px 5px;
+            margin: 10px 10px 10px 10px;
+            border: 3px solid rgb(67, 22, 145);
+        }
+
+        .list{
+            padding: 10px 10px;
+            margin: 15px 15px;
+            border: 8px solid black;
+            border-radius: 15px;
+        }
+
+
+        #formi{
+            background-color: rgba(128, 128, 128, 0.514);
+            width: 300px;
+        }
+
+        #email:hover{
+            cursor: pointer;
+            background-image: linear-gradient(to right, red,orange);
+        }
+
+        .email::before{
+            content: '=>';
+            color: green;
+        }
+
+
+        @media (max-width: 600px){
+            body{
+
+            background-color: black;
+            color: white;
+            font-size: 9.5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindos ao desafio de HTML5 e CSS3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, odio id temporibus, commodi aliquam asperiores ex quae sapiente veniam consequuntur fuga, accusantium mollitia dolores beatae quos nesciunt! Quos, cum in!</p>
+    </header>
+
+    <section class="list">
+        <h2>Aqui esta nossa seçao de listas</h2>
+        <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ol>
+        <br><br>
+        <ul>
+            <li>Jogar video games</li>
+            <li>praticar artes marciais</li>
+            <li>leitura</li>
+        </ul>
+        <br><br>
+        <dl>
+            <dt>HTML5</dt>
+            <dd>Hyper text markup language</dd>
+            <dt>CSS3</dt>
+            <dd>cascating style sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programaçao</dd>
+        </dl>
+    </section>
+
+    <article>
+        <h2>Artigo dedicado ao formulario</h2>
+        <form action="" id="formi">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+             <label for="" class="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+             <label for="msg">Mensagem:</label>
+            <input type="text" name="msg" id="msg">
+        </form>
+    </article>
+
+    <section>
+        <img src="ateliê maricota.jpg" alt="Imagem ilustrativa" width="250px" height="250px">
+        <br>
+        <a href="https://www.youtube.com/watch?v=foztF8i4Hjo" target="_blank">clique aqui para assistir a um video do YouTube</a>
+    </section>
+</body>
+</html>
+
+<!--Desafio Final — Página de Apresentação Responsiva
+
+📋 Requisitos obrigatórios:
+🔹 Estr
+
+
+
+🔹 Estilização CSS
+Estilo geral com font-family, color, background-color
+
+Estilização de parágrafos e títulos com padding, margin, border
+
+Uso de classe e id para aplicar estilos específicos
+
+Aplicar pelo menos uma pseudo-classe (:hover, :focus)
+
+Aplicar pelo menos um pseudo-elemento (::before, ::after)
+
+Aplicar Box Model completo (padding, margin, border, width)
+
+Usar Media Query para telas menores que 600px:
+
+Mudar cor de fundo
+
+Ajustar largura de elementos
+
+Reduzir tamanho da fonte
+
+🧩 Desafio extra (opcional):
+Usar display: flex ou grid para alinhar elementos
+
+Criar uma seção com <section> ou <article> para organizar melhor-->
