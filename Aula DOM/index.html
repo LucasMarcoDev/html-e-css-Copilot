@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulação do DOM</title>
+</head>
+<body>
+  <h1 id="titulo">Olá, Lucas!</h1>
+  <button onclick="mudarTexto()">Clique aqui</button>
+
+  <script>
+    function mudarTexto() {
+      document.getElementById("titulo").innerText = "Texto alterado com sucesso!";
+    }
+  </script>
+</body>
+</html>

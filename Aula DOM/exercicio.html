@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 id="titulo">Manipulaçao do DOM</h1>
+        <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi doloremque veritatis sit consequatur illo, repudiandae repellendus commodi. Reprehenderit nam voluptatibus at esse commodi ipsa aperiam dolorum veritatis, ea eaque?</p>
+        <button id="bt" onclick="muda()">Enviar</button>
+        <script>
+            function muda(){
+                alert('Desafio sugerido pelo copilot, boa sorte!')
+                let titu = document.getElementById('titulo')
+                let p = document.getElementById('paragrafo')
+                
+                titu.innerText ='Mudei o texto, por conta da sua funçao voce esta indo muito bem manipulando o dom'
+                p.style.backgroundColor='red'
+                p.style.width ='300px'
+                p.style.borderRadius = ' 20px'
+                    
+                
+            }
+        </script>
+</body>
+</html>
+
+
+    <!--Desafio da Aula 2
+Crie uma página com:
+
+Um título (<h1>) com id="titulo"
+
+Um botão que, ao ser clicado, altera o texto do título
+
+Um parágrafo com id="paragrafo" que muda de cor ao clicar em outro botão
+
+
+
